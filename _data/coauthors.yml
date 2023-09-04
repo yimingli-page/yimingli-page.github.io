@@ -18,7 +18,10 @@
   - firstname: ["Christopher"]
     url: https://scholar.google.com/citations?user=2u8G5ksAAAAJ&hl=en
 
-
+"Ding":
+  - firstname: ["Fangqiang"]
+    url: https://scholar.google.com/citations?hl=en&user=Ja8dgh8AAAAJ
+    
 "Fang":
   - firstname: ["Qi"]
     url: https://scholar.google.com/citations?hl=en&user=LIuiQlkAAAAJ
@@ -71,6 +74,10 @@
   - firstname: ["Dekun"]
     url: https://www.linkedin.com/in/dekunma/
 
+"Ren":
+  - firstname: ["Shunli"]
+    url: https://github.com/ShunliRen
+
 "Scherer":
   - firstname: ["Sebastian"]
     url: https://scholar.google.com/citations?user=gxoPfIYAAAAJ&hl=en
@@ -80,6 +87,12 @@
   - firstname: ["Sanbao"]
     url: https://scholar.google.com/citations?hl=en&user=EWyaceAAAAAJ
 
+
+"Wu":
+  - firstname: ["Pengxiang"]
+    url: https://scholar.google.com/citations?hl=en&user=MXLs7GcAAAAJ
+
+    
 "Xu":
   - firstname: ["Xuchu"]
     url: https://scholar.google.com/citations?hl=en&user=xE_taRkAAAAJ
