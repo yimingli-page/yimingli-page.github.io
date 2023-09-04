@@ -1,12 +1,10 @@
 github_users:
-  - torvalds
-  - alshedivat
+  - RoboticsYimingLi
 
 github_repos:
-  - alshedivat/al-folio
-  - twbs/bootstrap
-  - jekyll/jekyll
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - jpswalsh/academicons
-  - mathjax/MathJax
+  - NVlabs/VoxFormer
+  - AI4CE/DiscoNet
+  - AI4CE/SSCBench
+  - AI4CE/V2X-Sim
+  - AI4CE/FLAT
+  - AI4CE/DeepMapping2

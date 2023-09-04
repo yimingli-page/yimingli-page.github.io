@@ -2,6 +2,50 @@
 layout: about
 title: about
 permalink: /
+subtitle: " Dean's PhD Fellow@NYU | Research Intern@NVIDIA"
+
+profile:
+  align: right
+  image: back.jpeg
+  image_circular: false # crops the image to make it circular
+  address: >
+    Haleakala, Maui, 2021
+# <p>371 Fairfield Way, ITE 221,</p>
+    # <p>Storrs, CT 06269-4155</p>
+
+news: true  # includes a list of news items
+selected_papers: true # includes a list of papers marked as "selected={true}"
+social: true  # includes social icons at the bottom of the page
+---
+
+<!-- [I am on the job market! Please feel free to contact me if you think I could be a good fit. Thank you :)]() -->
+
+I am a 4th-year PhD student in <a href='https://ai4ce.github.io'>NYU AI4CE Lab</a>  led by <a href='https://scholar.google.com/citations?user=YeG8ZM0AAAAJ&hl=en'>Prof. Chen Feng</a>, and a visiting scholar at <a href='http://group.iiis.tsinghua.edu.cn/~marslab/#/'>Tsinghua IIIS MARS Lab</a>, working with <a href='https://scholar.google.com/citations?user=DmahiOYAAAAJ'>Prof. Hang Zhao</a>. I am also a research scientist intern at NVIDIA Research, working with <a href='https://scholar.google.com/citations?user=Oyx-_UIAAAAJ&hl=en'>Dr. Jose M. Alvarez</a> at <a href='https://alvarezlopezjosem.github.io'>Autonmous Vehicle Perception Research Group</a> and <a href='https://scholar.google.com/citations?user=1VI_oYUAAAAJ&hl=en'>Dr. Zhiding Yu</a> at <a href='https://research.nvidia.com/labs/lpr/'>Learning and Perception Research Group</a>. Prior to that, I was a research intern at NVIDIA AI Research Group led by <a href='https://scholar.google.com/citations?user=bEcLezcAAAAJ&hl=en'>Prof. Anima Anandkumar</a> in 2022, and a visiting scholar at Shanghai Jiao Tong University (SJTU) advised by <a href='https://scholar.google.com/citations?user=W_Q33RMAAAAJ&hl=en'>Prof. Siheng Chen</a> in 2021.  
+
+My research vision is to enable ***collaborative autonomous intelligence*** by enhancing robotics with human-level **spatial** and **social** awareness, allowing robots to *actively perceive, plan, and interact with others* in unstructured environments. To this end, I draw from vision, learning, robotics, language, sensing, and cognitive science. My research works include developing **robust, efficient, and scalable** learning-based methods for *3D scene parsing and decision-making* from high-dimensional sensory input, as well as **curating large-scale datasets** to effectively train and verify these methods for practical applications, including but not limited to autonomous vehicles and drones, assistive robotics, construction automation, and intelligent transportation.
+
+I divide my research into three interconnected directions, each with its own focus. My current efforts include:
+<div class="row">
+    <div class="col-sm-5 mt-3 mt-md-0">
+      <p> <b>Algorithm Development</b></p>
+    <ul>
+    <li><b>Spatial Intelligence:</b>  <a href=''>VoxFormer</a>  </li>
+    <li><b>Social Intelligence:</b> <a href=''>AmongUS</a>   </li>
+    <li><b>Verbal Intelligence:</b> TBD :muscle:</li>
+    </ul>
+    <p> <b>Dataset and Benchmark:</b> <a href=''>SSCBench</a></p>
+    </div>
+    <div class="col-sm-7 mt-3 mt-md-3">
+        {% include figure.html path="assets/img/vision.png" title="research summary image" class="img-fluid" %}
+    </div>
+</div>
+
+<!-- <img src="assets/img/research_summary.png" width = "100%" /> -->
+
+<!-- ---
+layout: about
+title: about
+permalink: /
 subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Moto. Etc.
 
 profile:
@@ -14,7 +58,7 @@ profile:
     <p>Your City, State 12345</p>
 
 news: true  # includes a list of news items
-latest_posts: true  # includes a list of the newest posts
+latest_posts: false  # includes a list of the newest posts
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
@@ -23,4 +67,4 @@ Write your biography here. Tell the world about yourself. Link to your favorite 
 
 Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](http://fortawesome.github.io/Font-Awesome/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+Link to your social media connections, too. This theme is set up to use [Font Awesome icons](http://fortawesome.github.io/Font-Awesome/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them. -->
