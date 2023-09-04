@@ -5,18 +5,12 @@ layout: default
 <!-- about.html -->
       <div class="post">
         <header class="post-header">
-          <div class="content">
-            <div class="col p-0 pt-1 pb-4">
-              <h1 class="m-0 mb-2" style="font-size: 2.50em;"><b>YIMING</b> LI</h1>  
-              <h6 class="m-0 mb-2" style="font-size: 0.83em;"><a href="https://www.nyu.edu/" class="page-description" target="_blank">Dean's Fellow @ NYU AI and Robotics</a></h6> 
-              <h6 class="m-0 mb-2" style="font-size: 0.83em;"><a href="https://www.nvidia.com/en-gb/" class="page-description" target="_blank">Scientist Intern @ NVIDIA Research</a></h6>
-            <div style="position: absolute; float: right; right:0px; top:10px">
-                 <img src="assets/img/nyu_logo.png" align="middle" width="493" height="90" />
-            </div>
-        </div>
+          <h1 class="post-title">
+            {% if site.title == "blank" -%}<span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }} {{ site.last_name }}{%- else -%}{{ site.title }}{%- endif %}
+          </h1>
+          <p class="desc">{{ page.subtitle }}</p>
         </header>
 
-        
         <article>
           {% if page.profile -%}
           <div class="profile float-{%- if page.profile.align == 'left' -%}left{%- else -%}right{%- endif -%}">
