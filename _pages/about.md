@@ -25,6 +25,15 @@ social: true  # includes social icons at the bottom of the page
 
 I am a 4th-year PhD student at <a href='https://ai4ce.github.io'>NYU AI4CE Lab</a> led by <a href='https://scholar.google.com/citations?user=YeG8ZM0AAAAJ&hl=en'>Prof. Chen Feng</a>, and a visiting scholar at <a href='http://group.iiis.tsinghua.edu.cn/~marslab/#/'>Tsinghua IIIS MARS Lab</a> led by <a href='https://scholar.google.com/citations?user=DmahiOYAAAAJ'>Prof. Hang Zhao</a>. I am also a research scientist intern at NVIDIA Research, working with <a href='https://scholar.google.com/citations?user=Oyx-_UIAAAAJ&hl=en'>Dr. Jose M. Alvarez</a> in the <a href='https://alvarezlopezjosem.github.io'>Autonmous Vehicle Perception Research Group</a>, <a href='https://scholar.google.com/citations?user=1VI_oYUAAAAJ&hl=en'>Dr. Zhiding Yu</a> in the <a href='https://research.nvidia.com/labs/lpr/'>Learning and Perception Research Group</a>, and <a href='https://scholar.google.com/citations?user=v-AEFIEAAAAJ&hl=en'>Prof. Yue Wang</a> in the <a href='https://nvr-avg.github.io/'>Autonmous Vehicle Research Group</a>. Prior to that, I had the opportunity to work as a research intern at NVIDIA AI Research advised by <a href='https://scholar.google.com/citations?user=bEcLezcAAAAJ&hl=en'>Prof. Anima Anandkumar</a> in 2022, and a visiting scholar at Shanghai Jiao Tong University advised by <a href='https://scholar.google.com/citations?user=W_Q33RMAAAAJ&hl=en'>Prof. Siheng Chen</a> in 2021.  
 
+<b><font color="firebrick">I am looking for UG/MS students to work on interesting research topics with me and my collaborators at NYU/NVIDIA/USC/Stanford/Tsinghua. Current topics include: </font></b>
+
+<b><font color="firebrick">*  Neural Scene Representations in Dynamic Scenes (NeRF/3DGS) </font></b>
+<b><font color="firebrick">*  Vision-Language Modesl for Spatial Robotics </font></b>
+<b><font color="firebrick">*  Embodied and Cognitive AI for Robotics </font></b>
+<b><font color="firebrick">*  Generative Models for Robotic Perception and Planning </font></b>
+<b><font color="firebrick">*  Dataset Curation and Autolabeling for Spatial Robotics </font></b>
+
+
 My research vision is to enable ***collaborative autonomous intelligence*** by empowering robots with human-level **spatial**, **social**, and **self-awareness**, allowing them to actively perceive and plan in unstructured environments, interact effectively with humans or other robots, and leverage as well as augment the associated memory. To this end, I draw from vision, learning, robotics, graphics, language, sensing, data science, and cognitive science. My research works include developing **robust, efficient, and scalable** computational models for *3D scene parsing and decision-making* from high-dimensional sensory input, as well as **curating large-scale datasets** to effectively train and verify these models for practical applications, including but not limited to *connected and autonomous vehicles, assistive and service robotics, and construction automation*. I divide my research into several interconnected directions, each with its focus.
 <div class="row">
     <div class="col-sm-5 mt-3 mt-md-0">
