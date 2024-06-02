@@ -39,8 +39,6 @@ I am a 4th-year PhD student at <a href='https://ai4ce.github.io'>NYU AI4CE Lab</
 My research vision is to enable ***collaborative autonomous intelligence*** by empowering robots with human-level **spatial**, **social**, and **self-awareness**, allowing them to actively perceive and plan in unstructured environments, interact effectively with humans or other robots, and leverage as well as augment the associated memory. To this end, I draw from vision, learning, robotics, graphics, language, sensing, data science, and cognitive science. My research works include developing **robust, efficient, and scalable** computational models for *3D scene parsing and decision-making* from high-dimensional sensory input, as well as **curating large-scale datasets** to effectively train and verify these models for applications such as *connected and autonomous vehicles, assistive and service robotics, and construction automation*. 
 
 
-<!-- <img src="assets/img/research_summary.png" width = "100%" /> -->
-
 <!-- ---
 layout: about
 title: about
@@ -65,21 +63,5 @@ social: true  # includes social icons at the bottom of the page
 Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
 
 Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
-
-<div class="row">
-    <div class="col-sm-5 mt-3 mt-md-0">
-      <p> <b>Computational Model</b></p>
-    <ul>
-    <li><b>Spatial Intelligence:</b>  <a href=''>VoxFormer</a>  </li>
-    <li><b>Social Intelligence:</b> <a href=''>AmongUS</a>   </li>
-    <li><b>Verbal Intelligence</b> </li>
-    <li><b>Self Intelligence</b> </li>
-    </ul>
-    <p> <b>Dataset and Benchmark:</b> <a href=''>SSCBench</a></p>
-    </div>
-    <div class="col-sm-7 mt-3 mt-md-3">
-        {% include figure.html path="assets/img/vision.png" title="research summary image" class="img-fluid" %}
-    </div>
-</div>
 
 Link to your social media connections, too. This theme is set up to use [Font Awesome icons](http://fortawesome.github.io/Font-Awesome/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them. -->
