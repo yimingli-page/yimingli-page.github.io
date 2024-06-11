@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-We are oganizeing the [2nd Vision-Centric Autonomous Driving (VCAD) Workshop](https://vcad-workshop.github.io/) at ECCV 2024. We invite you to attend our workshop and submit your papers!
+We are organizing the [2nd Vision-Centric Autonomous Driving (VCAD) Workshop](https://vcad-workshop.github.io/) at ECCV 2024. We invite you to attend our workshop and submit your papers!
