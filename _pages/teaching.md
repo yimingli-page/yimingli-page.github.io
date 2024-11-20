@@ -2,7 +2,7 @@
 layout: page
 permalink: /teaching/
 title: lectures
-description:  I have participated in a wide range of lectures covering topics such as computer vision, computer graphics, optimal control, localization and navigation, and the mathematics of deep learning, inspiring my interdisciplinary research.
+description:  I have taken courses from multiple departments (ME/EE/CS) at NYU Tandon and NYU Courant, such as computer graphics, optimal control and RL, localization and navigation, swarm robotics, robot perception, and the mathematics of deep learning. I have also collaborated with experts from diverse fields such as robotics, signal processing, vision & graphics, cybersecurity, and mechanical & civil engineering. This interdisciplinary training equips me to design and teach courses that bridge theoretical AI/ML foundations with practical robotics and engineering applications, preparing students to address practical problems using AI.
 nav: true
 nav_order: 5
 ---
