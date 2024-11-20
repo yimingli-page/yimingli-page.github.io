@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Our MARS dataset is covered by TechXplore: [New dataset kicks autonomous vehicle research into high gear](https://techxplore.com/news/2024-07-dataset-autonomous-vehicle-high-gear.html).
+MARS is covered by TechXplore: [New dataset kicks autonomous vehicle research into high gear](https://techxplore.com/news/2024-07-dataset-autonomous-vehicle-high-gear.html).
