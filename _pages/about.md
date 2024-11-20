@@ -7,11 +7,9 @@ subtitle: " <a href=''>Dean's PhD Fellow @ NYU | NVIDIA Fellow (2024-2025)</a>"
 profile:
   align: right
   image: back.jpeg
-  image_circular: false # crops the image to make it circular
+  image_circular: true # crops the image to make it circular
   address: >
     Haleakala, Maui, 2021
-# <p>371 Fairfield Way, ITE 221,</p>
-    # <p>Storrs, CT 06269-4155</p>
 
 
 news: true  # includes a list of news items
