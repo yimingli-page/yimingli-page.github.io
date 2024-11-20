@@ -1,6 +1,6 @@
 ---
 ---
-@article{li20243dgm,
+@InProceedings{li20243dgm,
   selected={true},   
   abbr={NeurIPS Spotlight},
   preview={3dgm.png},
@@ -15,7 +15,21 @@
   abstract={Humans naturally retain memories of permanent elements, while ephemeral moments often slip through the cracks of memory. This selective retention is crucial for robotic perception, localization, and mapping. To endow robots with this capability, we introduce 3D Gaussian Mapping (3DGM), a self-supervised, camera-only offline mapping framework grounded in 3D Gaussian Splatting. 3DGM converts multitraverse RGB videos from the same region into a Gaussian-based environmental map while concurrently performing 2D ephemeral object segmentation. Our key observation is that the environment remains consistent across traversals, while objects frequently change. This allows us to exploit self-supervision from repeated traversals to achieve environment-object decomposition. More specifically, 3DGM formulates multitraverse environmental mapping as a robust representation learning problem, treating pixels of the environment and objects as inliers and outliers, respectively. Using robust feature distillation, feature residuals mining, and robust optimization, 3DGM jointly performs 3D mapping and 2D segmentation without human intervention. We build the Mapverse benchmark, sourced from the Ithaca365 and nuPlan datasets, to evaluate our method in unsupervised 2D segmentation, 3D reconstruction, and neural rendering. Extensive results verify the effectiveness and potential of our method for self-driving and robotics.}
 }
 
-@article{li2023sscbench,
+@InProceedings{ding2024radarocc, 
+  abbr={NeurIPS},
+  preview={radarocc.png},
+  title={RadarOcc: Robust 3D Occupancy Prediction with 4D Imaging Radar},
+  author={Ding, Fangqiang and Wen, Xiangyu and Zhu, Yunzhou and Li, Yiming and Lu, Chris Xiaoxuan},
+  booktitle={Advances in Neural Information Processing Systems},
+  year={2024},
+  code={https://github.com/Toytiny/RadarOcc},
+  pdf={https://arxiv.org/pdf/2405.14014},
+  website ={https://toytiny.github.io/publication/24-radarocc-neurips/},
+  arxiv={2405.14014},
+  abstract={3D occupancy-based perception pipeline has significantly advanced autonomous driving by capturing detailed scene descriptions and demonstrating strong generalizability across various object categories and shapes. Current methods predominantly rely on LiDAR or camera inputs for 3D occupancy prediction. These methods are susceptible to adverse weather conditions, limiting the all-weather deployment of self-driving cars. To improve perception robustness, we leverage the recent advances in automotive radars and introduce a novel approach that utilizes 4D imaging radar sensors for 3D occupancy prediction. Our method, RadarOcc, circumvents the limitations of sparse radar point clouds by directly processing the 4D radar tensor, thus preserving essential scene details. RadarOcc innovatively addresses the challenges associated with the voluminous and noisy 4D radar data by employing Doppler bins descriptors, sidelobe-aware spatial sparsification, and range-wise self-attention mechanisms. To minimize the interpolation errors associated with direct coordinate transformations, we also devise a spherical-based feature encoding followed by spherical-to-Cartesian feature aggregation. We benchmark various baseline methods based on distinct modalities on the public K-Radar dataset. The results demonstrate RadarOcc's state-of-the-art performance in radar-based 3D occupancy prediction and promising results even when compared with LiDAR- or camera-based methods. Additionally, we present qualitative evidence of the superior performance of 4D radar in adverse weather conditions and explore the impact of key pipeline components through ablation studies.}
+}
+
+@InProceedings{li2024sscbench,
   abbr={IROS},
   preview={sscbench.gif},
   title={SSCBench: A Large-Scale 3D Semantic Scene Completion Benchmark for Autonomous Driving},
@@ -28,18 +42,63 @@
   abstract={Semantic scene completion (SSC) is crucial for holistic 3D scene understanding by jointly estimating semantics and geometry from sparse observations. However, progress in SSC, particularly in autonomous driving scenarios, is hindered by the scarcity of high-quality datasets. To overcome this challenge, we introduce SSCBench, a comprehensive benchmark that integrates scenes from widely-used automotive datasets (e.g., KITTI-360, nuScenes, and Waymo). SSCBench follows an established setup and format in the community, facilitating the easy exploration of the camera- and LiDAR-based SSC across various real-world scenarios. We present quantitative and qualitative evaluations of state-of-the-art algorithms on SSCBench and commit to continuously incorporating novel automotive datasets and SSC algorithms to drive further advancements in this field.}
 }
 
+@InProceedings{liu2024occ4cast,
+  abbr={IROS},
+  preview={occ4cast.gif},
+  title={Lidar-based 4d occupancy completion and forecasting},
+  author={Liu, Xinhao and Gong, Moonjun and Fang, Qi and Xie, Haoyu and Li, Yiming and Zhao, Hang and Feng, Chen},
+  booktitle={IEEE/RSJ International Conference on Intelligent Robots and Systems},
+  year={2024},
+  code={https://github.com/ai4ce/Occ4cast},
+  pdf={https://arxiv.org/pdf/2310.11239.pdf},
+  arxiv={2310.11239},
+  abstract={Scene completion and forecasting are two popular perception problems in research for mobile agents like autonomous vehicles. Existing approaches treat the two problems in isolation, resulting in a separate perception of the two aspects. In this paper, we introduce a novel LiDAR perception task of Occupancy Completion and Forecasting (OCF) in the context of autonomous driving to unify these aspects into a cohesive framework. This task requires new algorithms to address three challenges altogether: (1) sparse-to-dense reconstruction, (2) partial-to-complete hallucination, and (3) 3D-to-4D prediction. To enable supervision and evaluation, we curate a large-scale dataset termed OCFBench from public autonomous driving datasets. We analyze the performance of closely related existing baseline models and our own ones on our dataset. We envision that this research will inspire and call for further investigation in this evolving and crucial area of 4D perception. }
+}
+
 @InProceedings{li2024mars,
   selected={true},  
   abbr={CVPR},
   preview={mars.png},
   title={Multiagent Multitraversal Multimodal Self-Driving: Open MARS Dataset}, 
   author={Li, Yiming and Li, Zhiheng and Chen, Nuo and Gong, Moonjun and Lyu, Zonglin and Wang, Zehong and Jiang, Peili and Feng, Chen},
-  booktitle = {IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  booktitle = {IEEE Conference on Computer Vision and Pattern Recognition},
   year={2024},
   code={https://github.com/ai4ce/MARS},
   website ={https://ai4ce.github.io/MARS/},
+  pdf={https://openaccess.thecvf.com/content/CVPR2024/papers/Li_Multiagent_Multitraversal_Multimodal_Self-Driving_Open_MARS_Dataset_CVPR_2024_paper.pdf},
   abstract={Large-scale datasets have fueled recent advancements in AI-based autonomous vehicle research. However, these datasets are usually collected from a single vehicle's one-time pass of a certain location, lacking multiagent interactions or repeated traversals of the same place. Such information could lead to transformative enhancements in autonomous vehicles' perception, prediction, and planning capabilities. To bridge this gap, in collaboration with the self-driving company May Mobility, we present MARS dataset which unifies scenarios that enable MultiAgent, multitraveRSal, and multimodal autonomous vehicle research. More specifically, MARS is collected with a fleet of autonomous vehicles driving within a certain geographical area. Each vehicle has its own route and different vehicles may appear at nearby locations. Each vehicle is equipped with a LiDAR and surround-view RGB cameras. We curate two subsets in MARS: one facilitates collaborative driving with multiple vehicles simultaneously present at the same location, and the other enables memory retrospection through asynchronous traversals of the same location by multiple vehicles. We conduct experiments in place recognition and neural reconstruction. More importantly, MARS introduces new research opportunities and challenges such as multitraversal 3D reconstruction, multiagent perception, and unsupervised object discovery. Our data and codes can be found at https://ai4ce.github.io/MARS/.}
 }
+
+
+@inproceedings{fang2024egopat3dv2,
+  abbr={ICRA},
+  preview={egopat3dv2.png},
+  title={EgoPAT3Dv2: Predicting 3D Action Target from 2D Egocentric Vision for Human-Robot Interaction},
+  author={Fang, Irving and Chen, Yuzhong and Wang, Yifan and Zhang, Jianghan and Zhang, Qiushi and Xu, Jiali and He, Xibo and Gao, Weibo and Su, Hao and Li, Yiming and others},
+  booktitle={IEEE International Conference on Robotics and Automation},
+  year={2024},
+  code = {https://github.com/ai4ce/EgoPAT3Dv2/tree/main},
+  pdf={https://arxiv.org/pdf/2403.05046.pdf},
+  website = {https://ai4ce.github.io/EgoPAT3Dv2/},
+  arxiv = {2403.05046},
+  abstract={A robot's ability to anticipate the 3D action target location of a hand's movement from egocentric videos can greatly improve safety and efficiency in human-robot interaction (HRI). While previous research predominantly focused on semantic action classification or 2D target region prediction, we argue that predicting the action target's 3D coordinate could pave the way for more versatile downstream robotics tasks, especially given the increasing prevalence of headset devices. This study expands EgoPAT3D, the sole dataset dedicated to egocentric 3D action target prediction. We augment both its size and diversity, enhancing its potential for generalization. Moreover, we substantially enhance the baseline algorithm by introducing a large pre-trained model and human prior knowledge. Remarkably, our novel algorithm can now achieve superior prediction outcomes using solely RGB images, eliminating the previous need for 3D point clouds and IMU input. Furthermore, we deploy our enhanced baseline algorithm on a real-world robotic platform to illustrate its practical utility in straightforward HRI tasks. The demonstrations showcase the real-world applicability of our advancements and may inspire more HRI use cases involving egocentric vision. All code and data are open-sourced and can be found on the project website.}
+}
+
+
+@inproceedings{huang2024actformer,
+  abbr={ICRA},
+  preview={actformer.png},
+  title={Actformer: Scalable collaborative perception via active queries},
+  author={Huang, Suozhi and Zhang, Juexiao and Li, Yiming and Feng, Chen},
+  booktitle={IEEE International Conference on Robotics and Automation},
+  year={2024},
+  code = {https://github.com/coperception/ActFormer},
+  pdf={https://arxiv.org/pdf/2403.04968.pdf},
+  website = {https://coperception.github.io/ActFormer/},
+  arxiv = {2403.04968},
+  abstract={Collaborative perception leverages rich visual observations from multiple robots to extend a single robot's perception ability beyond its field of view. Many prior works receive messages broadcast from all collaborators, leading to a scalability challenge when dealing with a large number of robots and sensors. In this work, we aim to address \textit{scalable camera-based collaborative perception} with a Transformer-based architecture. Our key idea is to enable a single robot to intelligently discern the relevance of the collaborators and their associated cameras according to a learned spatial prior. This proactive understanding of the visual features' relevance does not require the transmission of the features themselves, enhancing both communication and computation efficiency. Specifically, we present ActFormer, a Transformer that learns bird's eye view (BEV) representations by using predefined BEV queries to interact with multi-robot multi-camera inputs. Each BEV query can actively select relevant cameras for information aggregation based on pose information, instead of interacting with all cameras indiscriminately. Experiments on the V2X-Sim dataset demonstrate that ActFormer improves the detection performance from 29.89% to 45.15% in terms of AP@0.7 with about 50% fewer queries, showcasing the effectiveness of ActFormer in multi-agent collaborative 3D object detection.}
+}
+
 
 @article{su2023collaborative,
   abbr={RA-L},
@@ -55,7 +114,6 @@
 }
 
 @inproceedings{li2023amongus,
-  selected={true},  
   abbr={ICCV},
   preview={amongus.png},    
   title={Among Us: Adversarially Robust Collaborative Perception by Consensus},
