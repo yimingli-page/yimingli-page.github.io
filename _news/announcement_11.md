@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-I have received [NVIDIA Graduate Fellowship (2024-2025)](https://blogs.nvidia.com/blog/graduate-research-fellowships-for-2024/) (10 awardees wordwide).
+I have received [NVIDIA Graduate Fellowship (2024-2025)](https://blogs.nvidia.com/blog/graduate-research-fellowships-for-2024/) (10 awardees worldwide).
