@@ -1,5 +1,57 @@
 ---
 ---
+@InProceedings{li2024memogaussian,
+  abbr={Preprint},
+  preview={memogaussian.png},
+  title={MemoGaussian: 4D Gaussian Splatting with Spatial Memory}, 
+  author={Li, Yiming and Xu, Zitai and Han, Xiangyu and Li, Boyi and Wang, Yan and Wang, Yue and Ivanovic, Boris and You, Yurong and Feng, Chen and Pavone, Marco},
+  booktitle={Under Review},
+  year={2025},
+  abstract={Humans naturally develop spatial memory when navigating new environments to recall relevant information upon revisiting the same place. We aim to equip autonomous agents with similar cognitive skills, by investigating a challenging urban scene reconstruction problem under long-term temporal changes. To model the complex and dynamic urban scene, we introduce MemoGaussian, a memory-augmented framework to learn composite representations of temporally changing urban scenes with self-supervision. Grounded in Gaussian Splatting, MemoGaussian simultaneously captures scene geometry and appearance while stratifying scenes into environment and object fields. The environment field represents permanent structures in the 3D scene, such as buildings and roads, while the object field captures transient entities like moving or static pedestrians and vehicles. Given an RGB video, along with the environment field built using the past traversal RGB videos, MemoGaussian can simultaneously adapt the environment field and discover novel objects appearing in the current traversal. This environmental adaptation and object discovery emerge by jointly optimizing the environment and object fields over the 2D image space. To the best of our knowledge, MemoGaussian is the first method to achieve self-supervised spatiotemporal decomposition of permanent and transient components within the scene, enhancing object segmentation and sensor simulation without human annotations.}
+}
+
+@InProceedings{han2024euvs,
+  abbr={Preprint},
+  preview={euvs.png},
+  title={Extrapolated Urban View Synthesis Benchmark}, 
+  author={Han, Xiangyu and Jia, Zhen and Li, Boyi and Wang, Yan and Ivanovic, Boris and You, Yurong and Liu, Lingjie and Wang, Yue and Pavone, Marco and Feng, Chen and Li, Yiming},
+  booktitle={Under Review},
+  year={2025},
+  abstract={Photorealistic simulators are essential for the training and evaluation of vision-centric autonomous vehicles (AVs). At their core is Novel View Synthesis (NVS), a crucial capability that generates diverse unseen viewpoints to accommodate the broad and continuous pose distribution of AVs. Recent advances in radiance fields, such as 3D Gaussian Splatting, achieve photorealistic rendering at real-time speeds and have been widely used in modeling large-scale driving scenes. However, their performance is commonly evaluated using an interpolated setup with highly correlated training and test views. In contrast, extrapolation, where test views largely deviate from training views, remains underexplored, limiting progress in generalizable simulation technology. To address this gap, we leverage publicly available AV datasets with multiple traversals, multiple vehicles, and multiple cameras to build the first Extrapolated Urban View Synthesis (EUVS) benchmark. Meanwhile, we conduct quantitative and qualitative evaluations of state-of-the-art Gaussian Splatting methods across different difficulty levels. Our results show that Gaussian Splatting is prone to overfitting to training views. In addition, incorporating diffusion priors and improving geometry cannot fundamentally improve NVS under large view changes, highlighting the need for more robust approaches. We will release our resources for the community to advance simulation technology for self-driving and urban robotics.}
+}
+
+@InProceedings{li2024rap,
+  abbr={Preprint},
+  preview={rap.png},
+  title={Unleashing the Power of Data Synthesis in Visual Localization}, 
+  author={Li, Sihang and Tan, Siqi and Chang, Bowen and Zhang, Jing and Feng, Chen and Li, Yiming},
+  booktitle={Under Review},
+  year={2025},
+  abstract={Visual localization, which estimates a camera's pose within a known scene, is essential in computer vision and robotics. Recent end-to-end methods that regress camera pose directly from query images have gained attention for their inference efficiency and robustness in challenging environments. However, these methods often struggle to generalize to unseen locations outside the training data. To address these limitations and unleash the power of data for learning generalizable representations in pose regression, we propose a two-branch joint learning pipeline with efficient data synthesis from 3D Gaussian Splatting (3DGS). Our 3DGS method offers deblurring and controllable appearance variation capabilities, while an adversarial discriminator reduces the synthetic-to-real gap, enhancing feature learning. Experiments on established benchmarks show that our method outperforms state-of-the-art end-to-end approaches, reducing translation and rotation errors by 50% and 21.6% on indoor datasets, and 35.56% and 38.7% on outdoor datasets. We also validate the effectiveness of our framework in dynamic driving scenarios under varying weather conditions. As data synthesis scales up, our model demonstrates an increasing ability to interpolate and extrapolate training data for localization in unseen regions.}
+}
+
+
+@InProceedings{liu2024diff,
+  abbr={Preprint},
+  preview={diff.png},
+  title={Diffusion Transformer as Scalable Imitating Driver}, 
+  author={Liu, Yicheng and Ye, Baijun and Yuan, Tianyuan and Li, Yiming and Zhao, Hang},
+  booktitle={Under Review},
+  year={2025},
+  abstract={Imitation learning (IL) has become a popular approach for autonomous driving, leveraging large expert datasets to learn driving policies. However, scaling IL to handle high-capacity architectures, complex observations, and multimodal driving actions remains challenging. To address these issues, we propose DiffMILE, a diffusion model-based imitation learning framework that integrates an autoregressive world model with diffusion transformer decoders for actions and observations within a model-based imitation learning framework. By introducing a novel hybrid conditioning method, DiffMILE achieves improved scalability, training stability, and expressiveness. Experimental results show that DiffMILE efficiently utilizes data, excels in urban driving scenarios, and demonstrates strong generalization to unseen towns and weather conditions, while also adapting effectively to few-shot demonstration settings.}
+}
+
+@InProceedings{li20243dgm,
+  abbr={Preprint},
+  preview={splat-sim.png},
+  title={Splat-Sim: A Closed-Loop Driving Simulator with Gaussian Splatting}, 
+  author={Ge, Junhao and Liu, Zuhong and Fan, Longteng and Jiang, Yifan and Su, Jiaqi and Li, Yiming and Zhang, Zhejun and Chen, Siheng},
+  booktitle={Under Review},
+  year={2025},
+  abstract={We introduce Splat-Sim, a simulation framework with Gaussian Splatting for testing autonomous driving (AD) systems, tailored for sensor-realistic closed-loop evaluation in scenarios involving dynamic agent interactions. Splat-Sim generates agent vehicles that interact with ego vehicle in configurable scenarios. We reconstruct scene backgrounds, integrating agent vehicles from a pre-trained 3D Gaussian Splatting (3DGS) vehicle library. Our framework renders images from the perspective of ego vehicle, dynamically adjusting the agent vehicles to produce novel viewpoint images in real time. In our experiments, we generate additional data via our platform to train end-to-end models (E2E models), validating the quality of the synthetic data and the effectiveness of our closed-loop simulation. Our findings indicate that open-loop evaluations of E2E models do not fully reflect performance limitations and reveal the need for improved generalization across real-world datasets. Our platform demonstrates the potential to fuse and extend real-world datasets, offering a robust simulator for AD model development and testing. }
+}
+
+
 @InProceedings{li20243dgm,
   selected={true},   
   abbr={NeurIPS Spotlight},
