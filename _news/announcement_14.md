@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-I successfully passed my PhD defense [[video]](https://www.youtube.com/watch?v=s-8__iF1-bk). Many thanks to my committee and collaborators!
+I successfully passed my PhD defense - [video](https://www.youtube.com/watch?v=s-8__iF1-bk). Many thanks to my committee and collaborators!
