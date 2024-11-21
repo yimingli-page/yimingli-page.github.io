@@ -181,7 +181,23 @@
   abstract={Object detection and multiple object tracking (MOT) are essential components of self-driving systems. Accurate detection and uncertainty quantification are both critical for onboard modules, such as perception, prediction, and planning, to improve the safety and robustness of autonomous vehicles. Collaborative object detection (COD) has been proposed to improve detection accuracy and reduce uncertainty by leveraging the viewpoints of multiple agents. However, little attention has been paid on how to leverage the uncertainty quantification from COD to enhance MOT performance. In this paper, as the first attempt, we design the uncertainty propagation framework to address this challenge, called MOT-CUP. Our framework first quantifies the uncertainty of COD through direct modeling and conformal prediction, and propogates this uncertainty information during the motion prediction and association steps. MOT-CUP is designed to work with different collaborative object detectors and baseline MOT algorithms. We evaluate MOT-CUP on V2X-Sim, a comprehensive collaborative perception dataset, and demonstrate a 2% improvement in accuracy and a 2.67X reduction in uncertainty compared to the baselines, e.g., SORT and ByteTrack. MOT-CUP demonstrates the importance of uncertainty quantification in both COD and MOT, and provides the first attempt to improve the accuracy and reduce the uncertainty in MOT based on COD through uncertainty propogation.}
 }
 
+@INPROCEEDINGS{HeRSS23, 
+  selected={true},   
+  abbr={RSS},
+  preview={deepexplorer.png},
+  AUTHOR    = {He, Yuhang and Fang, Irving and Li, Yiming and Shah, Rushi Bhavesh and Feng, Chen}, 
+  TITLE     = {{Metric-Free Exploration for Topological Mapping by Task and Motion Imitation in Feature Space}}, 
+  BOOKTITLE = {Proceedings of Robotics: Science and Systems}, 
+  YEAR      = {2023},
+  pdf = {https://www.roboticsproceedings.org/rss19/p099.pdf},
+  code = {https://github.com/ai4ce/DeepExplorer},
+  website = {https://ai4ce.github.io/DeepExplorer/},
+  slides = {https://ai4ce.github.io/DeepExplorer/static/videos/Simplified_ATM.mp4},
+  abstract = {We propose DeepExplorer, a simple and lightweight metric-free exploration method for topological mapping of unknown environments. It performs task and motion planning (TAMP) entirely in image feature space. The task planner is a recurrent network using the latest image observation sequence to hallucinate a feature as the next-best exploration goal. The motion planner then utilizes the current and the hallucinated features to generate an action taking the agent towards that goal. The two planners are jointly trained via deeply-supervised imitation learning from expert demonstrations. During exploration, we iteratively call the two planners to predict the next action, and the topological map is built by constantly appending the latest image observation and action to the map and using visual place recognition (VPR) for loop closing. The resulting topological map efficiently represents an environment's connectivity and traversability, so it can be used for tasks such as visual navigation. We show DeepExplorer's exploration efficiency and strong sim2sim generalization capability on large-scale simulation datasets like Gibson and MP3D. Its effectiveness is further validated via the image-goal navigation performance on the resulting topological map. We further show its strong zero-shot sim2real generalization capability in real-world experiments. }
+} 
+
 @inproceedings{li2023amongus,
+  selected={true},  
   abbr={ICCV},
   preview={amongus.png},    
   title={Among Us: Adversarially Robust Collaborative Perception by Consensus},
@@ -207,21 +223,7 @@
   abstract={Visual object tracking is essential to intelligent robots. Most existing approaches have ignored the online latency that can cause severe performance degradation during real-world processing. Especially for unmanned aerial vehicles (UAVs), where robust tracking is more challenging and onboard computation is limited, the latency issue can be fatal. In this work, we present a simple framework for end-to-end latency-aware tracking, i.e., end-to-end predictive visual tracking (PVT++). Unlike existing solutions that naively append Kalman Filters after trackers, PVT++ can be jointly optimized, so that it takes not only motion information but can also leverage the rich visual knowledge in most pre-trained tracker models for robust prediction. Besides, to bridge the training-evaluation domain gap, we propose a relative motion factor, empowering PVT++ to generalize to the challenging and complex UAV tracking scenes. These careful designs have made the small-capacity lightweight PVT++ a widely effective solution. Additionally, this work presents an extended latency-aware evaluation benchmark for assessing an any-speed tracker in the online setting. Empirical results on a robotic platform from the aerial perspective show that PVT++ can achieve significant performance gain on various trackers and exhibit higher accuracy than prior solutions, largely mitigating the degradation brought by latency.}
   }
 
-@INPROCEEDINGS{HeRSS23, 
-  selected={true},   
-  abbr={RSS},
-  preview={deepexplorer.png},
-  AUTHOR    = {He, Yuhang and Fang, Irving and Li, Yiming and Shah, Rushi Bhavesh and Feng, Chen}, 
-  TITLE     = {{Metric-Free Exploration for Topological Mapping by Task and Motion Imitation in Feature Space}}, 
-  BOOKTITLE = {Proceedings of Robotics: Science and Systems}, 
-  YEAR      = {2023},
-  pdf = {https://www.roboticsproceedings.org/rss19/p099.pdf},
-  code = {https://github.com/ai4ce/DeepExplorer},
-  website = {https://ai4ce.github.io/DeepExplorer/},
-  slides = {https://ai4ce.github.io/DeepExplorer/static/videos/Simplified_ATM.mp4},
-  abstract = {We propose DeepExplorer, a simple and lightweight metric-free exploration method for topological mapping of unknown environments. It performs task and motion planning (TAMP) entirely in image feature space. The task planner is a recurrent network using the latest image observation sequence to hallucinate a feature as the next-best exploration goal. The motion planner then utilizes the current and the hallucinated features to generate an action taking the agent towards that goal. The two planners are jointly trained via deeply-supervised imitation learning from expert demonstrations. During exploration, we iteratively call the two planners to predict the next action, and the topological map is built by constantly appending the latest image observation and action to the map and using visual place recognition (VPR) for loop closing. The resulting topological map efficiently represents an environment's connectivity and traversability, so it can be used for tasks such as visual navigation. We show DeepExplorer's exploration efficiency and strong sim2sim generalization capability on large-scale simulation datasets like Gibson and MP3D. Its effectiveness is further validated via the image-goal navigation performance on the resulting topological map. We further show its strong zero-shot sim2real generalization capability in real-world experiments. }
 
-} 
 
 @InProceedings{li2023voxformer,
   selected={true},  
