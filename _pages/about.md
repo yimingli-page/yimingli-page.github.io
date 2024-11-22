@@ -2,7 +2,6 @@
 layout: about
 title: about
 permalink: /
-subtitle: " <a href=''>Dean's PhD Fellow @ NYU | NVIDIA Fellow (2024-2025)</a>"
 
 profile:
   align: right
