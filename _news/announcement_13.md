@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-We are organizing the [2nd Vision-Centric Autonomous Driving (VCAD) Workshop](https://vcad-workshop.github.io/) at ECCV 2024.
+We are organizing the [2nd VCAD Workshop](https://vcad-workshop.github.io/) and [1st MLLMAV Workshop](https://mllmav.github.io/) at ECCV 2024.
