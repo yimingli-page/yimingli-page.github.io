@@ -21,13 +21,17 @@
 }
 
 @article{li2024rap,
+  selected={true},  
   abbr={Preprint},
   preview={rap.png},
   title={Unleashing the Power of Data Synthesis in Visual Localization}, 
   author={Li, Sihang and Tan, Siqi and Chang, Bowen and Zhang, Jing and Feng, Chen and Li, Yiming},
-  journal={Under Review},
+  journal={Technical Report},
   year={2025},
-  abstract={Visual localization, which estimates a camera's pose within a known scene, is essential in computer vision and robotics. Recent end-to-end methods that regress camera pose directly from query images have gained attention for their inference efficiency and robustness in challenging environments. However, these methods often struggle to generalize to unseen locations outside the training data. To address these limitations and unleash the power of data for learning generalizable representations in pose regression, we propose a two-branch joint learning pipeline with efficient data synthesis from 3D Gaussian Splatting (3DGS). Our 3DGS method offers deblurring and controllable appearance variation capabilities, while an adversarial discriminator reduces the synthetic-to-real gap, enhancing feature learning. Experiments on established benchmarks show that our method outperforms state-of-the-art end-to-end approaches, reducing translation and rotation errors by 50% and 21.6% on indoor datasets, and 35.56% and 38.7% on outdoor datasets. We also validate the effectiveness of our framework in dynamic driving scenarios under varying weather conditions. As data synthesis scales up, our model demonstrates an increasing ability to interpolate and extrapolate training data for localization in unseen regions.}
+  pdf={https://arxiv.org/pdf/2412.00138},
+  website ={https://ai4ce.github.io/RAP/},
+  arxiv={2412.00138},
+  abstract={Visual localization, which estimates a camera's pose within a known scene, is a long-standing challenge in vision and robotics. Recent end-to-end methods that directly regress camera poses from query images have gained attention for fast inference. However, existing methods often struggle to generalize to unseen views. In this work, we aim to unleash the power of data synthesis to promote the generalizability of pose regression. Specifically, we lift real 2D images into 3D Gaussian Splats with varying appearance and deblurring abilities, which are then used as a data engine to synthesize more posed images. To fully leverage the synthetic data, we build a two-branch joint training pipeline, with an adversarial discriminator to bridge the syn-to-real gap. Experiments on established benchmarks show that our method outperforms state-of-the-art end-to-end approaches, reducing translation and rotation errors by 50% and 21.6% on indoor datasets, and 35.56% and 38.7% on outdoor datasets. We also validate the effectiveness of our method in dynamic driving scenarios under varying weather conditions. Notably, as data synthesis scales up, the ability to interpolate and extrapolate training data for localizing unseen views emerges.}
 }
 
 
