@@ -11,12 +11,17 @@
 }
 
 @article{han2024euvs,
+  selected={true},  
   abbr={Preprint},
   preview={euvs.png},
   title={Extrapolated Urban View Synthesis Benchmark}, 
   author={Han, Xiangyu and Jia, Zhen and Li, Boyi and Wang, Yan and Ivanovic, Boris and You, Yurong and Liu, Lingjie and Wang, Yue and Pavone, Marco and Feng, Chen and Li, Yiming},
   journal={Under Review},
-  year={2025},
+  year={2024},
+  pdf={https://arxiv.org/pdf/2412.05256},
+  website ={https://ai4ce.github.io/EUVS-Benchmark/},
+  arxiv={2412.05256},
+  code={https://github.com/ai4ce/EUVS-Benchmark/},
   abstract={Photorealistic simulators are essential for the training and evaluation of vision-centric autonomous vehicles (AVs). At their core is Novel View Synthesis (NVS), a crucial capability that generates diverse unseen viewpoints to accommodate the broad and continuous pose distribution of AVs. Recent advances in radiance fields, such as 3D Gaussian Splatting, achieve photorealistic rendering at real-time speeds and have been widely used in modeling large-scale driving scenes. However, their performance is commonly evaluated using an interpolated setup with highly correlated training and test views. In contrast, extrapolation, where test views largely deviate from training views, remains underexplored, limiting progress in generalizable simulation technology. To address this gap, we leverage publicly available AV datasets with multiple traversals, multiple vehicles, and multiple cameras to build the first Extrapolated Urban View Synthesis (EUVS) benchmark. Meanwhile, we conduct quantitative and qualitative evaluations of state-of-the-art Gaussian Splatting methods across different difficulty levels. Our results show that Gaussian Splatting is prone to overfitting to training views. In addition, incorporating diffusion priors and improving geometry cannot fundamentally improve NVS under large view changes, highlighting the need for more robust approaches. We will release our resources for the community to advance simulation technology for self-driving and urban robotics.}
 }
 
@@ -31,6 +36,7 @@
   pdf={https://arxiv.org/pdf/2412.00138},
   website ={https://ai4ce.github.io/RAP/},
   arxiv={2412.00138},
+  code={https://github.com/ai4ce/RAP/},
   abstract={Visual localization, which estimates a camera's pose within a known scene, is a long-standing challenge in vision and robotics. Recent end-to-end methods that directly regress camera poses from query images have gained attention for fast inference. However, existing methods often struggle to generalize to unseen views. In this work, we aim to unleash the power of data synthesis to promote the generalizability of pose regression. Specifically, we lift real 2D images into 3D Gaussian Splats with varying appearance and deblurring abilities, which are then used as a data engine to synthesize more posed images. To fully leverage the synthetic data, we build a two-branch joint training pipeline, with an adversarial discriminator to bridge the syn-to-real gap. Experiments on established benchmarks show that our method outperforms state-of-the-art end-to-end approaches, reducing translation and rotation errors by 50% and 21.6% on indoor datasets, and 35.56% and 38.7% on outdoor datasets. We also validate the effectiveness of our method in dynamic driving scenarios under varying weather conditions. Notably, as data synthesis scales up, the ability to interpolate and extrapolate training data for localizing unseen views emerges.}
 }
 
