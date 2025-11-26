@@ -1,0 +1,1044 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Yiming Li - Research Scientist</title>
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-1026H9KKXP"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-1026H9KKXP');
+    </script>
+
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-55MFGGC');</script>
+    <!-- End Google Tag Manager -->
+
+    <!-- Bootstrap CSS -->
+    <link href="./files/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./files/font.css">
+    <link rel="stylesheet" href="./files/all.min.css">
+
+    <!-- Custom Styles -->
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --question-color: rgb(0, 0, 250);
+            --accent-color: #57068C;
+            --highlight-color: #8a3f3f;
+            --text-color: #4F6371;
+            --light-bg: #f8f9fa;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Lato', Verdana, Helvetica, sans-serif;
+            font-size: 16px;
+            background-color: #FFFFFF;
+            color: var(--text-color);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* 修复导航栏颜色问题 */
+        header {
+            width: 100%;
+            height: 45px;
+            margin-top: 0;
+            text-align: center;
+            background-color: var(--primary-color);
+            position: fixed;
+            z-index: 100;
+            top: 0;
+        }
+
+        .header {
+            line-height: 45px;
+        }
+
+        /* 导航栏链接颜色 - 强制白色 */
+        .navleft a, 
+        .navright a,
+        header .navleft a, 
+        header .navright a,
+        header .navleft, 
+        header .navright {
+            color: #FFFFFF !important;
+            text-decoration: none;
+            transition: opacity 0.2s ease;
+        }
+
+        .navleft a:hover, 
+        .navright a:hover,
+        header .navleft a:hover, 
+        header .navright a:hover {
+            color: #FFFFFF !important;
+            text-decoration: underline;
+            opacity: 0.8;
+        }
+
+        .navleft {
+            float: left;
+            padding-left: 90px;
+            font-size: 1.4em;
+            font-weight: 600;
+        }
+
+        .navright-group {
+            float: right;
+            display: flex;
+            align-items: center;
+        }
+
+        .navright {
+            float: right;
+            padding-left: 20px;
+            padding-right: 20px;
+            font-size: 1.2em;
+        }
+
+        /* 页面内容链接颜色 */
+        .container a {
+            color: #004a6c;
+            text-decoration: none;
+        }
+
+        .container a:hover {
+            text-decoration: underline;
+        }
+
+        h1 {
+            font-weight: 300;
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            color: var(--primary-color);
+        }
+
+        #header {
+            background-color: #FFFFFF;
+            display: flex;
+            align-items: flex-end;
+            padding-top: 110px;
+            padding-bottom: 30px;
+        }
+
+        #footer {
+            background-color: #FFFFFF;
+            padding: 30px 0 10px 0;
+        }
+
+        #portrait {
+            border: 3px solid white;
+            border-radius: 4px;
+        }
+
+        #header-text-name {
+            color: #000000;
+            font-size: 40px;
+            font-weight: 500;
+            margin-bottom: 0.5rem;
+        }
+
+        .header-text-email {
+            font-size: 20px;
+            font-style: italic;
+        }
+
+        .header-text-desc {
+            font-size: 18px;
+            margin-bottom: 0.5rem;
+        }
+
+        .vspace-top {
+            margin-top: 30px;
+        }
+
+        .vspace-top-news {
+            margin-top: 15px;
+        }
+
+        .paper-image {
+            width: 150px;
+        }
+
+        .news-date {
+            font-weight: bold;
+        }
+
+        .news-date-red {
+            color: var(--highlight-color);
+            font-weight: bold;
+        }
+
+        .text-red {
+            color: var(--highlight-color);
+        }
+
+        .paper-title {
+            font-weight: bold;
+            font-size: 1.0rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .paper-highlight {
+            color: var(--highlight-color);
+            font-weight: bold;
+            margin-top: 0.5rem;
+        }
+
+        .paper-author a {
+            color: #777777;
+            font-weight: 500;
+        }
+
+        .paper-author a:hover {
+            text-decoration: underline;
+        }
+
+        span.author.sx {
+            color: #000000;
+            font-weight: 600;
+        }
+
+        /* Publication item hover effects */
+        .publication-item {
+            transition: transform 0.2s ease;
+            padding: 15px 0;
+            /* border-bottom: 1px solid #e0e0e0;  灰色分割线 */
+            /* margin-bottom: 0; */
+        }
+
+        .publication-item:hover {
+            transform: translateY(-2px);
+        }
+
+        .publication-item .img-fluid {
+            border-radius: 6px;
+            transition: transform 0.3s ease;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .publication-item:hover .img-fluid {
+            transform: scale(1.03);
+        }
+
+        .publication-item .paper-title {
+            transition: color 0.2s ease;
+        }
+
+        .publication-item:hover .paper-title {
+            color: var(--accent-color);
+        }
+
+        .publication-item .paper-links a {
+            transition: color 0.2s ease;
+            margin-right: 10px;
+        }
+
+        .publication-item:hover .paper-links a {
+            color: var(--accent-color);
+        }
+
+        /* Research sections */
+        .research-simple {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            margin: 30px 0;
+        }
+
+        .research-item {
+            padding: 20px;
+            background: var(--light-bg);
+            border-radius: 8px;
+            border-left: 4px solid #495057;
+        }
+
+        /* .research-item:nth-child(1) {
+            background: linear-gradient(135deg, rgba(255, 99, 132, 0.1), rgba(255, 99, 132, 0.05));
+            border-left: 4px solid rgb(255, 99, 132);
+            border-radius: 8px;
+        }
+
+        .research-item:nth-child(2) {
+            background: linear-gradient(135deg, rgba(75, 192, 192, 0.1), rgba(75, 192, 192, 0.05));
+            border-left: 4px solid rgb(75, 192, 192);
+            border-radius: 8px;
+        }
+        .research-item:nth-child(3) {
+            background: linear-gradient(135deg, #e6f7ff, #f0fbff);
+            border-left: 4px solid rgb(64, 169, 255);
+            border-radius: 8px;
+        } */
+
+        .research-item h3 {
+            color: var(--primary-color);
+            margin: 0 0 12px 0;
+            font-size: 1rem;
+            line-height: 1.4;
+            font-weight: normal;
+        }
+
+        .research-item .question {
+            color: var(--question-color);
+            font-style: italic;
+            font-weight: normal;
+            font-size: 0.95rem;
+        }
+
+        .research-item .question-1 {
+            color: rgb(255, 99, 132); /* 蓝色 */
+            font-style: italic;
+            font-weight: normal;
+            font-size: 0.95rem;
+        }
+
+        .research-item .question-2 {
+            color: rgb(0, 187, 150); /* 粉色/红色 */
+            font-style: italic;
+            font-weight: normal;
+            font-size: 0.95rem;
+        }
+
+        .research-item .question-3 {
+            color: rgb(74, 107, 255); /* 青色 */
+            font-style: italic;
+            font-weight: normal;
+            font-size: 0.95rem;
+        }
+
+        .research-item .topics {
+            color: #495057;
+            margin: 0;
+            font-size: 0.9rem;
+            line-height: 1.5;
+        }
+
+        .announcement-box {
+            background-color: #fff7eb;
+            padding: 15px;
+            border-left: 4px solid #ffb74d;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+
+        /* Stats section */
+        .stats-section {
+            margin-top: 20px;
+            text-align: center;
+            padding: 20px 0 0 0;
+        }
+
+        .stats-section h4 {
+            margin-bottom: 10px;
+            color: var(--primary-color);
+        }
+
+        .stats-container {
+            display: inline-block;
+            background: var(--light-bg);
+            padding: 15px;
+            border-radius: 8px;
+        }
+
+        /* Mobile responsive styles */
+        @media (max-width: 768px) {
+            header {
+                height: auto;
+                min-height: 45px;
+                padding: 8px 0;
+                overflow: hidden;
+            }
+
+            .header {
+                line-height: 1.5;
+                display: flex;
+                flex-wrap: nowrap;
+                justify-content: space-between;
+                align-items: center;
+                padding: 0 10px;
+                width: 100%;
+            }
+
+            .navleft {
+                float: none;
+                padding-left: 15px;
+                padding-right: 10px;
+                font-size: 1.1em;
+                flex: 0 0 auto;
+            }
+
+            .navright-group {
+                float: none;
+                display: flex;
+                align-items: center;
+                flex: 0 0 auto;
+            }
+
+            .navright {
+                float: none;
+                padding-left: 10px;
+                padding-right: 0;
+                font-size: 1em;
+            }
+
+            .navright:last-child {
+                padding-right: 0;
+            }
+
+            #header {
+                padding-top: 70px;
+            }
+
+            #header-text-name {
+                font-size: 32px;
+            }
+
+            .header-text-desc {
+                font-size: 16px;
+            }
+
+            .research-item {
+                padding: 15px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .navleft {
+                font-size: 1em;
+                padding-left: 12px;
+            }
+
+            .navright {
+                font-size: 0.9em;
+                padding-left: 8px;
+            }
+
+            .header {
+                padding: 0 8px;
+            }
+
+            #header-text-name {
+                font-size: 28px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-55MFGGC" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <a id="Home"></a>
+    <div class="outercontainer">
+        <header>
+            <div class="container header">
+                <div class="navleft text"><a href="#Home">YIMING LI</a></div>
+                <div class="navright-group">
+                    <div class="navright text"><a href="#Pub">RESEARCH</a></div>
+                    <div class="navright text"><a href="#Home">HOME</a></div>
+                </div>
+            </div>
+        </header>
+
+        <div id="header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-3 offset-sm-2">
+                        <img src="./files/profile.png" class="img-fluid" id="portrait" alt="Yiming Li portrait">
+                    </div>
+                    <div class="col-sm-5 offset-sm-1">
+                        <div id="header-text-name">Yiming Li</div>
+                        <div class="header-text-desc">Research Scientist, NVIDIA Research</div>
+                        <div class="header-text-desc">Incoming Assistant Professor, Tsinghua University</div>
+                        <br>
+                        <div class="header-text-desc">
+                            yimingli [at] nyu [dot] edu
+                        </div>
+                        <p></p>
+                        <div>
+                            <img src="./files/google-scholar.svg" alt="Google Scholar" style="width: 16px; height: 16px; vertical-align: middle;">
+                            <a href="https://scholar.google.com/citations?hl=en&user=i_aajNoAAAAJ&view_op=list_works&sortby=pubdate"> Google Scholar</a> /    
+                            <img src="./files/x-logo.svg" alt="X" style="width: 16px; height: 16px; vertical-align: middle;">
+                            <a href="https://x.com/YimingLi9702" style="color: #000000; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-weight: 400;"> Twitter</a>  /                             
+                            <img src="./files/linkedin.svg" alt="Linkedin" style="width: 16px; height: 16px; vertical-align: middle;">
+                            <a href="https://www.linkedin.com/in/yiming-li-58b519173/">Linkedin</a>   / 
+                            <img src="./files/redbook.svg" alt="RedNote" style="width: 16px; height: 16px; vertical-align: middle;">
+                            <a href="https://www.xiaohongshu.com/user/profile/6131e1f60000000002018909">RedNote</a>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row vspace-top">
+                <div class="col offset-sm-1">
+                    <h1>About Me</h1>
+                    <p>
+                        Hello! I am a research scientist at NVIDIA, working on physical AI and autonomous vehicles with <a href="https://scholar.google.com/citations?user=RhOpyXcAAAAJ&hl=en">Marco Pavone</a> at Stanford University.  
+                        I obtained my PhD degree from New York University (NYU) in 2025, working on robot perception with <a href="https://scholar.google.com/citations?user=YeG8ZM0AAAAJ&hl=en">Chen Feng</a>. I am also fortunate to collaborate with <a href="https://scholar.google.com/citations?user=Y2GtJkAAAAAJ&hl=en">Saining Xie</a> on visual-spatial intelligence.    
+                        During my PhD, I did three internships at NVIDIA, working on autonomous perception and neural simulation with <a href="https://scholar.google.com/citations?user=bEcLezcAAAAJ&hl=en">Anima Anandkumar (Caltech)</a>, <a href="https://scholar.google.com/citations?user=CUlqK5EAAAAJ&hl=en">Sanja Fidler (UofT)</a>, <a href="https://scholar.google.com/citations?user=Oyx-_UIAAAAJ&hl=en">Jose M. Alvarez</a>, <a href="https://scholar.google.com/citations?user=1VI_oYUAAAAJ&hl=en">Zhiding Yu</a>, <a href="https://scholar.google.com/citations?user=Juoqtj8AAAAJ&hl=en">Chaowei Xiao (JHU)</a>, <a href="https://scholar.google.com/citations?user=8KsqL4gAAAAJ&hl=en">Zan Gojcjc</a>, and <a href="https://scholar.google.com/citations?user=v-AEFIEAAAAJ&hl=en">Yue Wang (USC)</a>.                 
+                        I also spent some time at Tsinghua IIIS with <a href="https://scholar.google.com/citations?user=DmahiOYAAAAJ&hl=en">Hang Zhao</a> and Shanghai Jiao Tong University (SJTU) with <a href="https://scholar.google.com/citations?user=W_Q33RMAAAAJ&hl=en">Siheng Chen</a>.
+                    </p>
+                    <p>
+                        My research has been cited nearly 4,000 times (as of Nov 2025), and I am honored to be a recipient of the NVIDIA Fellowship (2024-2025), NYU Dean's PhD Fellowship, and NYU Outstanding Dissertation Awards (Finalist).
+                    </p>
+                    
+                    <div class="announcement-box">
+                        <i><b style="color: #d32f2f;">I will join Tsinghua University as an Assistant Professor in the College of AI (led by Prof. Andrew Chi-Chih Yao) in 2026.</b></i> <br><br>
+                        <b>🎓 Recruiting: </b> Looking for postdocs, PhD students, undergraduates, interns, and visiting scholars to join my lab. Welcome to reach out!<br>
+                        <b>⏳ Deadline: </b> International PhD applications for Fall 2026 are due by January 15, 2026. Urgently seeking qualified candidates! 
+                    </div>
+                    
+                    <div class="vspace-top-news">
+                        <section class="container lead">
+                            <div class="vspace-top" style="font-size:16px">
+                                <h1>Research Lab - Spatial Intelligence</h1>
+                                <p></p>
+                                <p></p>
+                                Our mission is to <span style="font-weight: bold; font-style: italic; background: linear-gradient(45deg,  #f9d423, #f64f59,  #c471ed, #5f2c82, #302b63, #0f0c29); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">
+                                scale AI across space, time, and embodiements to address real-world needs for humans
+                                </span>. Towards this end, we are pushing the frontiers of spatial intelligence through the convergence of vision, learning, and robotics. Our research agenda centers on three thrusts:
+                                
+                                <div class="research-simple">
+                                    <div class="research-item">
+                                        <h3><b>🧠 Research Thrust 1 - Spatial Cognition:</b> 
+                                            <span class="question-1">How can embodied agents perceive, represent, and reason about space and time like humans do?</span>
+                                        </h3>
+                                        <p class="topics">Sensing and Perception, Spatial Representation, Spatial Reasoning, Spatial Memory, Spatial World Model, Cognitive Mapping, Mental Manipulation</p>
+                                    </div>
+
+                                    <div class="research-item">
+                                        <h3><b>🌏 Research Thrust 2 - Spatial Computing:</b> 
+                                            <span class="question-2">How to create realistic digital twins from multimodal sensory streams without human supervision?</span>
+                                        </h3>
+                                        <p class="topics">3D Reconstruction, Neural Radiance Fields, Gaussian Splatting, Physics-based Simulation, Generative Modeling, Real2Sim2Real, Edge-Computing</p>
+                                    </div>
+
+                                    <div class="research-item">
+                                        <h3><b>🦾 Research Thrust 3 - Spatial Robotics:</b> 
+                                            <span class="question-3">How can we ground cognitive intelligence in real-world robots across different morphologies?</span>
+                                        </h3>
+                                        <p class="topics">Autonomous Navigation, Humanoid Robotics, Multi-Robot System, Field Robotics, Bio-Inspired Robotics, Robotic Design and Its Automation</p>
+                                    </div>
+                                </div>
+
+                                <p>💡 We believe the above three thrusts are deeply synergistic: cognitive models trained in simulation are grounded in physical robots, whose real-world experiences in turn benefit both the cognitive models and digital worlds. 
+                                Our long-term vision is to build a <i>self-sustaining, self-evolving spatial AI ecosystem</i> where machines autonomously perceive, reason about, and transform the physical world—enabling <i>AI Designs AI, Robots Build Robots</i> through the seamless convergence of embodied cognition, digital universe, and physical embodiements.</p>
+                                
+                                <p>💪 Towards this long-term vision, we are currently pushing the following research directions:</p>
+                                <ul>
+                                    <li><strong>Prototyping spatially-grounded foundation models</strong></li>
+                                    <li><strong>Exploring human-like efficient spatial representations</strong></li>
+                                    <li><strong>Building open-world embodied AI simulators</strong></li>
+                                    <li><strong>Grounding visual-spatial intelligence in humanoid robots</strong></li>
+                                    <li><strong>Constructing large-scale datasets and benchmarks</strong> to broaden the practical applications of spatial AI</li>
+                                    <li><strong>Designing specialized physical embodiments</strong> to diversify problem domains of spatial AI</li>
+                                </ul>
+                                
+                                <!-- <p style="background-color: #f8f9fa; padding: 15px; border-radius: 8px; border-left: 4px solid #6c757d; font-style: italic; font-weight: bold;"> -->
+                                <p style="background-color: #f0f9ff; padding: 15px; border-radius: 8px; border-left: 4px solid #007acc; font-style: italic; font-weight: bold;">
+                                    📣 To advance our mission, we are building an interdisciplinary team and welcome researchers with diverse expertise, 
+                                    including but not limited to: 
+                                    (1) AI Computing (e.g., MLLMs, UMMs, VFMs, world model, generative model), 
+                                    (2) 3D Vision (e.g., 3DGS, NeRF, SLAM), and 
+                                    (3) Robotics (e.g., sim2real, humanoid robotics, field robotics, robotic design). 
+                                    Please send me an email, and I will get back to you if there is a good fit!
+                                </p>
+                            </div>
+                        </section>
+                    </div>
+
+                    <div class="vspace-top">
+                        <a id="Pub"></a>
+                        <h1>Selected Publications</h1>
+                        <p>(* indicate equal contribution/advising)</p>
+                        <p>For full publication list, please refer to my 
+                            <img src="./files/google-scholar.svg" alt="Google Scholar" style="width: 20px; height: 20px; vertical-align: middle;">
+                            <a href="https://scholar.google.com/citations?hl=en&user=i_aajNoAAAAJ&view_op=list_works&sortby=pubdate">Google Scholar page.</a>
+                        </p>
+                    </div>
+
+                    <!-- Publications List -->
+                    <div class="publication-item row">
+                        <div class="col-sm-3">
+                            <img src="./files/hstar.png" class="img-fluid" alt="Thinking in 360°: Humanoid Visual Search in the Wild">
+                        </div>
+                        <div class="col">
+                            <div class="paper-title">
+                                🔥 Thinking in 360°: Humanoid Visual Search in the Wild
+                            </div>
+                            <div class="paper-desc">
+                                Technical Report, ArXiv 2025
+                            </div>
+                            <div class="paper-author">
+                                <span class="author">Heyang Yu*, Yinan Han*, Xiangyu Zhang, Baiqiao Yin, Bowen Chang, Xiangyu Han, Xinhao Liu, Jing Zhang, Marco Pavone, Chen Feng*, Saining Xie*, Yiming Li*</span>
+                            </div>
+                            <div class="paper-links">
+                                <a href="https://humanoid-vstar.github.io/">[Blog]</a>
+                                <a href="https://arxiv.org/abs/2511.20351">[Paper]</a>
+                                <a href="https://github.com/humanoid-vstar/hstar">[Code]</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="publication-item row">
+                        <div class="col-sm-3">
+                            <img src="./files/Wanderland.png" class="img-fluid" alt="Wanderland: Geometrically Grounded Simulation for Open-World Embodied AI">
+                        </div>
+                        <div class="col">
+                            <div class="paper-title">
+                                🔥 Wanderland: Geometrically Grounded Simulation for Open-World Embodied AI
+                            </div>
+                            <div class="paper-desc">
+                                Technical Report, ArXiv 2025
+                            </div>
+                            <div class="paper-author">
+                                <span class="author">Xinhao Liu, Jiaqi Li, Youming Deng, Ruxin Chen, Yingjia Zhang, Yifei Ma, Li Guo, Yiming Li, Jing Zhang, Chen Feng</span>
+                            </div>
+                            <div class="paper-links">
+                                <a href="https://ai4ce.github.io/wanderland/">[Page]</a>
+                                <a href="https://arxiv.org/abs/2511.20620">[Paper]</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="publication-item row">
+                        <div class="col-sm-3">
+                            <img src="./files/flex.png" class="img-fluid" alt="Flex: Towards Efficient and Effective Multi-Camera Encoding for End-to-End Driving">
+                        </div>
+                        <div class="col">
+                            <div class="paper-title">
+                                🔥 Flex: Towards Efficient and Effective Multi-Camera Encoding for End-to-End Driving
+                            </div>
+                            <div class="paper-desc">
+                                Technical Report, ArXiv 2025
+                            </div>
+                            <div class="paper-author">
+                                <span class="author">Jiawei Yang, Ziyu Chen, Yurong You, Yan Wang, Yiming Li, Yuxiao Chen, Boyi Li, Boris Ivanovic, Marco Pavone, Yue Wang</span>
+                            </div>
+                            <div class="paper-links">
+                                <a href="https://jiawei-yang.github.io/Flex/">[Blog]</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="publication-item row">
+                        <div class="col-sm-3">
+                            <img src="./files/clm.png" class="img-fluid" alt="CLM: Removing the GPU Memory Barrier for 3D Gaussian Splatting">
+                        </div>
+                        <div class="col">
+                            <div class="paper-title">
+                                🔥 CLM: Removing the GPU Memory Barrier for 3D Gaussian Splatting
+                            </div>
+                            <div class="paper-desc">
+                                ASPLOS 2026
+                            </div>
+                            <div class="paper-author">
+                                <span class="author">Hexu Zhao, Xiwen Min, Xiaoteng Liu, Moonjun Gong, Yiming Li, Ang Li, Saining Xie, Jinyang Li, Aurojit Panda</span>
+                            </div>
+                            <div class="paper-links">
+                                <a href="https://arxiv.org/abs/2511.04951">[Paper]</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="publication-item row">
+                        <div class="col-sm-3">
+                            <img src="./files/rap.png" class="img-fluid" alt="Adversarial Exploitation of Data Diversity Improves Visual Localization">
+                        </div>
+                        <div class="col">
+                            <div class="paper-title">
+                                Adversarial Exploitation of Data Diversity Improves Visual Localization
+                            </div>
+                            <div class="paper-desc">
+                                ICCV 2025
+                            </div>
+                            <div class="paper-author">
+                                <span class="author">Sihang Li*, Siqi Tan*, Bowen Chang, Jing Zhang, Chen Feng*, Yiming Li*</span>
+                            </div>
+                            <div class="paper-links">
+                                <a href="https://ai4ce.github.io/RAP/">[Page]</a>
+                                <a href="https://arxiv.org/abs/2412.00138">[Paper]</a>
+                                <a href="https://github.com/ai4ce/RAP">[Code]</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="publication-item row">
+                        <div class="col-sm-3">
+                            <img src="./files/scenecrafter.png" class="img-fluid" alt="Unraveling the Effects of Synthetic Data on End-to-End Autonomous Driving">
+                        </div>
+                        <div class="col">
+                            <div class="paper-title">
+                                Unraveling the Effects of Synthetic Data on End-to-End Autonomous Driving
+                            </div>
+                            <div class="paper-desc">
+                                ICCV 2025
+                            </div>
+                            <div class="paper-author">
+                                <span class="author">Junhao Ge, Zuhong Liu, Longteng Fan, Yifan Jiang, Jiaqi Su, Yiming Li, Zhejun Zhang, Siheng Chen</span>
+                            </div>
+                            <div class="paper-links">
+                                <a href="https://openaccess.thecvf.com/content/ICCV2025/papers/Ge_Unraveling_the_Effects_of_Synthetic_Data_on_End-to-End_Autonomous_Driving_ICCV_2025_paper.pdf">[Paper]</a>
+                                <a href="https://github.com/cancaries/SceneCrafter">[Code]</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="publication-item row">
+                        <div class="col-sm-3">
+                            <img src="./files/euvs.png" class="img-fluid" alt="Extrapolated Urban View Synthesis Benchmark">
+                        </div>
+                        <div class="col">
+                            <div class="paper-title">
+                                Extrapolated Urban View Synthesis Benchmark
+                            </div>
+                            <div class="paper-desc">
+                                ICCV 2025
+                            </div>
+                            <div class="paper-author">
+                                <span class="author">Xiangyu Han*, Zhen Jia*, Boyi Li, and Yan Wang, Boris Ivanovic, Yurong You, Lingjie Liu, Yue Wang, Marco Pavone, Chen Feng, Yiming Li</span>
+                            </div>
+                            <div class="paper-links">
+                                <a href="https://ai4ce.github.io/EUVS-Benchmark/">[Page]</a>
+                                <a href="https://arxiv.org/abs/2412.05256">[Paper]</a>
+                                <a href="https://github.com/ai4ce/EUVS-Benchmark/">[Code]</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="publication-item row">
+                        <div class="col-sm-3">
+                            <img src="./files/3dgmv2.png" class="img-fluid" alt="Memorize What Matters: Emergent Scene Decomposition from Multitraverse">
+                        </div>
+                        <div class="col">
+                            <div class="paper-title">
+                                Memorize What Matters: Emergent Scene Decomposition from Multitraverse
+                            </div>
+                            <div class="paper-desc">
+                                NeurIPS 2024
+                            </div>
+                            <div class="paper-author">
+                                <span class="author">Yiming Li, Zehong Wang, Yue Wang, and Zhiding Yu, Zan Gojcic, Marco Pavone, Chen Feng, Jose M Alvarez</span>
+                            </div>
+                            <div class="paper-links">
+                                <a href="https://3d-gaussian-mapping.github.io/">[Page]</a>
+                                <a href="https://arxiv.org/abs/2405.17187">[Paper]</a>
+                            </div>
+                            <div class="paper-highlight">
+                                Spotlight Presentation
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="publication-item row">
+                        <div class="col-sm-3">
+                            <img src="./files/radarocc.gif" class="img-fluid" alt="RadarOcc: Robust 3D Occupancy Prediction with 4D Imaging Radar">
+                        </div>
+                        <div class="col">
+                            <div class="paper-title">
+                                RadarOcc: Robust 3D Occupancy Prediction with 4D Imaging Radar
+                            </div>
+                            <div class="paper-desc">
+                                NeurIPS 2024
+                            </div>
+                            <div class="paper-author">
+                                <span class="author">Fangqiang Ding*, Xiangyu Wen*, Yunzhou Zhu, and Yiming Li, Chris Xiaoxuan Lu</span>
+                            </div>
+                            <div class="paper-links">
+                                <a href="https://toytiny.github.io/publication/24-radarocc-neurips/">[Page]</a>
+                                <a href="https://arxiv.org/abs/2405.14014">[Paper]</a>
+                                <a href="https://github.com/Toytiny/RadarOcc">[Code]</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="publication-item row">
+                        <div class="col-sm-3">
+                            <img src="./files/multiagent_21.gif" class="img-fluid" alt="Multiagent Multitraversal Multimodal Self-Driving: Open MARS Dataset">
+                        </div>
+                        <div class="col">
+                            <div class="paper-title">
+                                Multiagent Multitraversal Multimodal Self-Driving: Open MARS Dataset
+                            </div>
+                            <div class="paper-desc">
+                                CVPR 2024
+                            </div>
+                            <div class="paper-author">
+                                <span class="author">Yiming Li, Zhiheng Li, Nuo Chen, Moonjun Gong, Zonglin Lyu, Zehong Wang, Peili Jiang, Chen Feng</span>
+                            </div>
+                            <div class="paper-links">
+                                <a href="https://ai4ce.github.io/MARS/">[Website]</a>
+                                <a href="https://openaccess.thecvf.com/content/CVPR2024/papers/Li_Multiagent_Multitraversal_Multimodal_Self-Driving_Open_MARS_Dataset_CVPR_2024_paper.pdf">[Paper]</a>
+                                <a href="https://github.com/ai4ce/MARS">[Code]</a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="publication-item row">
+                        <div class="col-sm-3">
+                            <img src="./files/egopat3dv2.png" class="img-fluid" alt="Predicting 3D Action Target from 2D Egocentric Vision for Human-Robot Interaction">
+                        </div>
+                        <div class="col">
+                            <div class="paper-title">
+                                Predicting 3D Action Target from 2D Egocentric Vision for Human-Robot Interaction
+                            </div>
+                            <div class="paper-desc">
+                                ICRA 2024
+                            </div>
+                            <div class="paper-author">
+                                <span class="author">Irving Fang*, Yuzhong Chen*, Yifan Wang*, and Jianghan Zhang, Qiushi Zhang, Jiali Xu, Xibo He, Weibo Gao, Hao Su, Yiming Li, Chen Feng</span>
+                            </div>
+                            <div class="paper-links">
+                                <a href="https://ai4ce.github.io/EgoPAT3Dv2/">[Page]</a>
+                                <a href="https://arxiv.org/abs/2403.05046">[Paper]</a>
+                                <a href="https://github.com/ai4ce/EgoPAT3Dv2/tree/main">[Code]</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="publication-item row">
+                        <div class="col-sm-3">
+                            <img src="./files/sscbench.gif" class="img-fluid" alt="SSCBench: A Large-Scale 3D Semantic Scene Completion Benchmark for Autonomous Driving">
+                        </div>
+                        <div class="col">
+                            <div class="paper-title">
+                                SSCBench: A Large-Scale 3D Semantic Scene Completion Benchmark for Autonomous Driving
+                            </div>
+                            <div class="paper-desc">
+                                IROS 2024
+                            </div>
+                            <div class="paper-author">
+                                <span class="author">Yiming Li*, Sihang Li*, Xinhao Liu*, Moonjun Gong*, Kenan Li, Nuo Chen, Zijun Wang, Zhiheng Li, Tao Jiang, Fisher Yu, Yue Wang, Hang Zhao, Zhiding Yu, Chen Feng</span>
+                            </div>
+                            <div class="paper-links">
+                                <a href="https://arxiv.org/abs/2306.09001">[Paper]</a>
+                                <a href="https://github.com/ai4ce/SSCBench">[Code]</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="publication-item row">
+                        <div class="col-sm-3">
+                            <img src="./files/amongus.png" class="img-fluid" alt="Among Us: Adversarially Robust Collaborative Perception by Consensus">
+                        </div>
+                        <div class="col">
+                            <div class="paper-title">
+                                Among Us: Adversarially Robust Collaborative Perception by Consensus
+                            </div>
+                            <div class="paper-desc">
+                                ICCV 2023
+                            </div>
+                            <div class="paper-author">
+                                <span class="author">Yiming Li*, Qi Fang*, Jiamu Bai, Siheng Chen, Felix Juefei-Xu, Chen Feng</span>
+                            </div>
+                            <div class="paper-links">
+                                <a href="https://arxiv.org/abs/2303.09495">[Paper]</a>
+                                <a href="https://github.com/coperception/ROBOSAC">[Code]</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="publication-item row">
+                        <div class="col-sm-3">
+                            <img src="./files/voxformer.png" class="img-fluid" alt="VoxFormer: Sparse Voxel Transformer for Camera-based 3D Semantic Scene Completion">
+                        </div>
+                        <div class="col">
+                            <div class="paper-title">
+                                VoxFormer: Sparse Voxel Transformer for Camera-based 3D Semantic Scene Completion
+                            </div>
+                            <div class="paper-desc">
+                                CVPR 2023
+                            </div>
+                            <div class="paper-author">
+                                <span class="author">Yiming Li, Zhiding Yu, Christopher Choy, and Chaowei Xiao, Jose M Alvarez, Sanja Fidler, Chen Feng, Anima Anandkumar</span>
+                            </div>
+                            <div class="paper-links">
+                                <a href="https://www.youtube.com/watch?v=L0M9ayR316g">[Video]</a>
+                                <a href="https://openaccess.thecvf.com/content/CVPR2023/papers/Li_VoxFormer_Sparse_Voxel_Transformer_for_Camera-Based_3D_Semantic_Scene_Completion_CVPR_2023_paper.pdf">[Paper]</a>
+                                <a href="https://github.com/NVlabs/VoxFormer">[Code]</a>
+                            </div>
+                            <div class="paper-highlight">
+                                Highlight Presentation
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="publication-item row">
+                        <div class="col-sm-3">
+                            <img src="./files/dm2.png" class="img-fluid" alt="DeepMapping2: Self-Supervised Large-Scale LiDAR Map Optimization">
+                        </div>
+                        <div class="col">
+                            <div class="paper-title">
+                                DeepMapping2: Self-Supervised Large-Scale LiDAR Map Optimization
+                            </div>
+                            <div class="paper-desc">
+                                CVPR 2023
+                            </div>
+                            <div class="paper-author">
+                                <span class="author">Chao Chen*, Xinhao Liu*, Yiming Li, and Li Ding, Chen Feng</span>
+                            </div>
+                            <div class="paper-links">
+                                <a href="https://ai4ce.github.io/DeepMapping2/">[Page]</a>
+                                <a href="https://openaccess.thecvf.com/content/CVPR2023/papers/Chen_DeepMapping2_Self-Supervised_Large-Scale_LiDAR_Map_Optimization_CVPR_2023_paper.pdf">[Paper]</a>
+                                <a href="https://github.com/ai4ce/DeepMapping2">[Code]</a>
+                            </div>
+                        </div>
+                    </div>
+                                        
+                    <div class="publication-item row">
+                        <div class="col-sm-3">
+                            <img src="./files/deepexplorer.png" class="img-fluid" alt="Metric-Free Exploration for Topological Mapping by Task and Motion Imitation in Feature Space">
+                        </div>
+                        <div class="col">
+                            <div class="paper-title">
+                                Metric-Free Exploration for Topological Mapping by Task and Motion Imitation in Feature Space
+                            </div>
+                            <div class="paper-desc">
+                                RSS 2023
+                            </div>
+                            <div class="paper-author">
+                                <span class="author">Yuhang He*, Irving Fang*, Yiming Li, Rushi Bhavesh Shah, Chen Feng</span>
+                            </div>
+                            <div class="paper-links">
+                                <a href="https://ai4ce.github.io/DeepExplorer/">[Page]</a>
+                                <a href="https://www.roboticsproceedings.org/rss19/p099.pdf">[Paper]</a>
+                                <a href="https://github.com/ai4ce/DeepExplorer">[Code]</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="publication-item row">
+                        <div class="col-sm-3">
+                            <img src="./files/star.jpg" class="img-fluid" alt="Multi-Robot Scene Completion: Towards Task-Agnostic Collaborative Perception">
+                        </div>
+                        <div class="col">
+                            <div class="paper-title">
+                                Multi-Robot Scene Completion: Towards Task-Agnostic Collaborative Perception
+                            </div>
+                            <div class="paper-desc">
+                                CoRL 2022
+                            </div>
+                            <div class="paper-author">
+                                <span class="author">Yiming Li*, Juexiao Zhang*, Dekun Ma, Yue Wang, Chen Feng</span>
+                            </div>
+                            <div class="paper-links">
+                                <a href="https://coperception.github.io/star/">[Page]</a> 
+                                <a href="https://proceedings.mlr.press/v205/li23e/li23e.pdf">[Paper]</a>
+                                <a href="https://github.com/coperception/star">[Code]</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="publication-item row">
+                        <div class="col-sm-3">
+                            <img src="./files/egopat3d.png" class="img-fluid" alt="Egocentric Prediction of Action Target in 3D">
+                        </div>
+                        <div class="col">
+                            <div class="paper-title">
+                                Egocentric Prediction of Action Target in 3D
+                            </div>
+                            <div class="paper-desc">
+                                CVPR 2022
+                            </div>
+                            <div class="paper-author">
+                                <span class="author">Yiming Li*, Ziang Cao*, Andrew Liang, and Benjamin Liang, Luoyao Chen, Hang Zhao, Chen Feng</span>
+                            </div>
+                            <div class="paper-links">
+                                <a href="https://ai4ce.github.io/EgoPAT3D/">[Website]</a> 
+                                <a href="https://openaccess.thecvf.com/content/CVPR2022/papers/Li_Egocentric_Prediction_of_Action_Target_in_3D_CVPR_2022_paper.pdf">[Paper]</a>
+                                <a href="https://github.com/ai4ce/EgoPAT3D">[Code]</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="publication-item row">
+                        <div class="col-sm-3">
+                            <img src="./files/disconet.png" class="img-fluid" alt="Learning Distilled Collaboration Graph for Multi-Agent Perception">
+                        </div>
+                        <div class="col">
+                            <div class="paper-title">
+                                Learning Distilled Collaboration Graph for Multi-Agent Perception
+                            </div>
+                            <div class="paper-desc">
+                                NeurIPS 2021
+                            </div>
+                            <div class="paper-author">
+                                <span class="author">Yiming Li, Shunli Ren, Pengxiang Wu, and Siheng Chen, Chen Feng, Wenjun Zhang</span>
+                            </div>
+                            <div class="paper-links">
+                                <a href="https://arxiv.org/abs/2111.00643">[Paper]</a>
+                                <a href="https://github.com/ai4ce/DiscoNet">[Code]</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="publication-item row">
+                        <div class="col-sm-3">
+                            <img src="./files/flat.png" class="img-fluid" alt="Fooling LiDAR Perception via Adversarial Trajectory Perturbation">
+                        </div>
+                        <div class="col">
+                            <div class="paper-title">
+                                Fooling LiDAR Perception via Adversarial Trajectory Perturbation
+                            </div>
+                            <div class="paper-desc">
+                                ICCV 2021
+                            </div>
+                            <div class="paper-author">
+                                <span class="author">Yiming Li*, Congcong Wen*, Felix Juefei-Xu, and Chen Feng</span>
+                            </div>
+                            <div class="paper-links">
+                                <a href="https://ai4ce.github.io/FLAT/">[Page]</a>
+                                <a href="https://openaccess.thecvf.com/content/ICCV2021/papers/Li_Fooling_LiDAR_Perception_via_Adversarial_Trajectory_Perturbation_ICCV_2021_paper.pdf">[Paper]</a>
+                                <a href="https://github.com/ai4ce/FLAT">[Code]</a>
+                            </div>
+                            <div class="paper-highlight">
+                                Oral Presentation
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div id="footer" class="vspace-top">
+            <div class="stats-section">
+                <h4>🌍 Visitor Statistics</h4>
+                <div class="stats-container">
+                    <script type='text/javascript' 
+                            id='clustrmaps' 
+                            src='//cdn.clustrmaps.com/map_v2.js?cl=080808&w=a&t=tt&d=mlnoXaYAm4smAXPH8yUZZCvmeWfFHSEoc0HNRhfFjD0&co=ffffff&ct=808080&cmo=3acc3a&cmn=ff5353'>
+                    </script>
+                </div>
+                <p style="margin-top: 15px; font-size: 14px; color: #666;">
+                    Last updated: Nov 16, 2025
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="./files/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="./files/bootstrap.min.js"></script>
+    <script src="./files/popper.min.js"></script>
+</body>
+</html>
